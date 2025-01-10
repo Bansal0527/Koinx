@@ -21,7 +21,7 @@ const fetchAndStoreCryptoData = async () => {
 
 const startCronJob = async () => {
 
-  await fetchAndStoreCryptoData();
+  // await fetchAndStoreCryptoData();
   
   
   cron.schedule(UPDATE_INTERVAL, fetchAndStoreCryptoData);
