@@ -1,6 +1,6 @@
 const axios = require('axios');
 const { COINGECKO_API_BASE_URL } = require('../config/constants');
-
+require('dotenv').config();
 
 exports.fetchCryptoData =  async (coinId) =>{
     try {
@@ -15,7 +15,7 @@ exports.fetchCryptoData =  async (coinId) =>{
           },
           headers: {
             accept: 'application/json',
-            'x-cg-demo-api-key': 'CG-GSkfPyZmgNZTvv6THv2fgRpW', 
+            'x-cg-demo-api-key': `${process.env.API_KEY}`, 
           }
         }
       );
