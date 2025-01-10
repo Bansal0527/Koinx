@@ -36,7 +36,7 @@ COINGECKO_API_KEY=your_api_key_here
 
 ## Running the Application
 
-Development mode (with hot reload):
+Development mode :
 ```bash
 npm run dev
 ```
@@ -50,6 +50,11 @@ GET /api/stats?coin=bitcoin
 ```
 Query Parameters:
 - `coin`: One of `bitcoin`, `ethereum`, or `matic-network`
+
+Deployed
+```bash
+koinx-plq2.onrender.com/api/stats?coin=bitcoin
+  ```
 
 Sample Response:
 ```json
